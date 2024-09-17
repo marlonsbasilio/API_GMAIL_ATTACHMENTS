@@ -90,11 +90,11 @@ def main():
     service = build('gmail', 'v1', credentials=creds)
 
     # Define o conteúdo do e-mail e o anexo
-    sender = 'marlonsbasilio@gmail.com'  # Substitua pelo seu e-mail
-    to = 'marlonsbasilio@gmail.com'  # Substitua pelo e-mail do destinatário
+    sender = 'email_sender@email.com'  # Substitua pelo seu e-mail
+    to = 'email_reviever@email.com'  # Substitua pelo e-mail do destinatário
     subject = 'Testando mensagem com arquivo PDF'
     message_text = 'Testando mensagem com arquivo'
-    file_path = 'ML_Art_Marlon.pdf'  # Substitua pelo caminho do seu arquivo de anexo
+    file_path = 'file.png'  # Substitua pelo caminho do seu arquivo de anexo
 
     # Cria a mensagem com anexo
     message = create_message_with_attachment(sender, to, subject, message_text, file_path)
